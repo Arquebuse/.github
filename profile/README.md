@@ -8,6 +8,8 @@ It respects users' "Do Not Disturb" settings, ensuring alerts are delivered resp
 
 ## Modules
 
+Arquebuse is composed of three loosely coupled modules:
+
 - [**Desktop‑App**](https://github.com/Arquebuse/desktop-app): Windows service that registers with WNS, receives and displays notifications.
 - [**Controller‑Core**](https://github.com/Arquebuse/controller-core): .NET 8 Minimal API managing client registrations, AD queries, and sending WNS notifications (uses SQLite).
 - [**Controller‑CLI**](https://github.com/Arquebuse/controller-cli): PowerShell Core module to manage subscriptions and send notifications via Controller‑Core.
@@ -18,16 +20,16 @@ It respects users' "Do Not Disturb" settings, ensuring alerts are delivered resp
 - Integrate with Active Directory for precise targeting.
 - Maintain simplicity, security, and enterprise readiness.
 
-## Architecture Overview
-
-Arquebuse is composed of three loosely coupled modules:
-
-1. [**Desktop‑App**](https://github.com/Arquebuse/desktop-app) (client) connects to WNS and displays toasts.
-2. [**Controller‑Core**](https://github.com/Arquebuse/controller-core) (server) exposes REST endpoints, queries LDAP, persists subscriptions, and invokes WNS.
-3. [**Controller‑CLI**](https://github.com/Arquebuse/controller-cli) (admin) is a PowerShell module consuming the REST API to manage and send alerts.
-
 ## Technologies
 
-- [**Desktop‑App**](https://github.com/Arquebuse/desktop-app): .NET 8 Windows Service, WNS integration, JSON logging
-- [**Controller‑Core**](https://github.com/Arquebuse/controller-core): .NET 8 Minimal API, Kestrel (HTTPS), System.DirectoryServices (LDAP), SQLite
-- [**Controller‑CLI**](https://github.com/Arquebuse/controller-cli): PowerShell 7+ module, REST API over HTTPS
+- **Desktop‑App**: .NET 8 Windows Service, WNS integration, JSON logging
+- **Controller‑Core**: .NET 8 Minimal API, Kestrel (HTTPS), System.DirectoryServices (LDAP), SQLite
+- **Controller‑CLI**: PowerShell 7+ module, REST API over HTTPS
+
+## Project status
+
+We are in the early stage of the project. Nothing is ready to use, but stay tuned, we move fast.
+
+## Vibe coding
+
+This project and its documentation were created and maintained using AI tools like ChatGPT and GitHub Copilot. Feel free to mock the code logic, style, or anything else, no one will take offense 😉
