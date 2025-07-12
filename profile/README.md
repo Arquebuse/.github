@@ -8,11 +8,11 @@ It respects users' "Do Not Disturb" settings, ensuring alerts are delivered resp
 
 ## Modules
 
-Arquebuse is composed of three loosely coupled modules:
+Arquebuse is composed of loosely coupled modules:
 
-- [**Desktop‑App**](https://github.com/Arquebuse/desktop-app): Windows service that registers with WNS, receives and displays notifications.
-- [**Controller‑Core**](https://github.com/Arquebuse/controller-core): .NET 8 Minimal API managing client registrations, AD queries, and sending WNS notifications (uses SQLite).
-- [**Controller‑CLI**](https://github.com/Arquebuse/controller-cli): PowerShell Core module to manage subscriptions and send notifications via Controller‑Core.
+- [**Desktop‑App**](https://github.com/Arquebuse/desktop-app) - A Windows service that registers with WNS, receives and displays notifications.
+- [**Controller‑Core**](https://github.com/Arquebuse/controller-core) - A .NET 8 Minimal API managing client registrations, AD queries, and sending WNS notifications (uses SQLite).
+- [**Controller‑CLI**](https://github.com/Arquebuse/controller-cli) - A PowerShell module to manage subscriptions and send notifications via Controller‑Core.
 
 ## Goals
 
